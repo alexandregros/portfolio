@@ -1,19 +1,13 @@
 $(function() {
 
-	// $('#welcome').css('height', $(window).innerHeight());
-	// $('#particles-js canvas').css('height', $(window).innerHeight());
-	// $('#header-nav').css('height', $(window).innerHeight());
 	$('.container').css('height', $(window).innerHeight());
 
 	$(window).resize(function() {
-		// $('#welcome').css('height', $(window).innerHeight());
-		// $('#particles-js').css('height', $(window).innerHeight());
-		// $('#header-nav').css('height', $(window).innerHeight());
 		$('.container').css('height', $(window).innerHeight());
 	});
 
 	// initTypeWriter();
-	var typeWriter = new TypeWriter('#typeWriter');
+	// var typeWriter = new TypeWriter('#typeWriter');
 	// typeWriter.start();
 
 	$("#header-nav a").on("click", function(e) {
