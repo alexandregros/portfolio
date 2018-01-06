@@ -1,0 +1,143 @@
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: 3px;
+	background: #222;
+	color: #fff;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+
+main {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+#skills {
+	display: none;
+}
+
+.color {
+	color: #1976d2;
+}
+
+/***************/
+/* TRANSITIONS */
+/* AND  HOVERS */
+/***************/
+
+header ul li a,
+#header-nav ul li a span {
+	transition: all 0.5s ease;
+}
+
+header ul li a:hover {
+	color: #1976d2;
+}
+
+#header-nav ul li a:hover span {
+	left: 100%;
+}
+
+/**********/
+/* HEADER */
+/**********/
+
+header {
+/*	width: 70px;
+	height: 100%;*/
+	background: #333;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header #header-nav {
+	height: 50%;
+	display: flex;
+}
+
+header ul {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#header-nav ul {
+	height: 100%;
+	justify-content: space-around;
+}
+
+header ul li a {
+	font-size: 20px;
+	color: white;
+	position: relative;
+	padding: 1rem 0;
+}
+
+#header-nav ul li a span {
+	display: block;
+	position: absolute;
+	top: 4px;
+	left: -500px;
+	z-index: -1;
+	text-transform: uppercase;
+	background: #333;
+	padding: 1rem 0.5rem 1rem 4rem;
+	color: #1976d2;
+	text-align: right;
+	font-size: 1rem;
+}
+
+#social {
+	width: 20%;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#social ul {
+	flex-direction: row;
+}
+
+/*******************/
+/* WELCOME SECTION */
+/*******************/
+
+#welcome h1 {
+	margin: 0;
+	font-size: 5rem;
+	font-weight: normal;
+	letter-spacing: 20px;
+}
+
+#welcome h1::before {
+	content: "{";
+}
+
+#welcome h1::after {
+	content: "}";
+}
